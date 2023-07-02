@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajid' - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Righteous&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(56, 125, 134);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left {
+            font-size: 3rem;
+        }
+
+        nav ul li a:hover {
+            color: rgb(178, 231, 231);
+            font-size: 1.02rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 50%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 100px;
+
+        }
+
+        .leftsection .download-btn {
+            padding: 12px;
+            background: white;
+            color: cadetblue;
+            border: 4px solid cadetblue;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightsection img {
+            width: 70%;
+            margin: 70px 0;
+        }
+
+        .fourthsection img {
+            width: 5%;
+        }
+
+        .color {
+            color: cadetblue;
+        }
+
+        .color2 {
+            color: cadetblue;
+        }
+
+        .color2 {
+            font-weight: 600;
+        }
+
+        .color3 {
+            color: cadetblue;
+            font-weight: 400;
+        }
+
+        #element {
+            color: cadetblue;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            min-height: 60vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            margin: 50px;
+        }
+
+        .secondsection h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            min-height: 60vh;
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            min-height: 60vh;
+        }
+
+        main hr {
+            border: 0;
+            background-color: cadetblue;
+            height: 0.1rem;
+            margin: 50px 70px;
+        }
+
+        .skills-section {
+            margin-top: 20px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .percentage-bar {
+            height: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background-color: cadetblue;
+            width: 0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .contact-section {
+            margin-top: 20px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 50vh;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-list li i {
+            margin-right: 10px;
+            color: cadetblue;
+            font-size: 18px;
+        }
+
+        .contact-list li a {
+            color: cadetblue;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-list li a:hover {
+            color: rgb(203, 243, 245);
+        }
+
+        .contact-list li span {
+            color: cadetblue;
+        }
+
+        footer h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-bottom p {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer img {
+            width: 30px;
+        }
+
+        .contact-list1 {
+            list-style: none;
+            padding: 20px;
+            margin: 0px 50px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">
+                Hi,I am <span class="color">Sajid Hussain</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="re.pdf" download="Resume" class="download-btn">Download CV <i class="fa fa-download"></i> </a>
+
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="pic.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="secondsection">
+            <h1>About</h1>
+            <h4>Hello, my name is <span class="color2">Sajid Hussain</span>, and I am a passionate mechanical
+                engineering student currently pursuing
+                my 3rd year of B.Tech. I have a deep interest in the field of mechanical engineering and an unwavering
+                curiosity to explore its diverse applications. Throughout my academic journey, I have gained a
+                comprehensive understanding of core engineering principles and have developed proficiency in subjects
+                such as thermodynamics, mechanics, and design. I have actively engaged in hands-on projects, both
+                individually and as part of a team, allowing me to sharpen my problem-solving and technical skills.
+                Additionally, I have built an impressive portfolio that showcases my projects, design work, and
+                technical expertise. This portfolio demonstrates my ability to apply theoretical knowledge to practical
+                situations and showcases my creativity, attention to detail, and innovative problem-solving skills. As I
+                continue to expand my knowledge and embrace new technologies, I am eager to contribute to the
+                advancement of mechanical engineering and tackle real-world engineering challenges. With a strong
+                commitment to excellence and a passion for continuous learning, I am excited to make a meaningful impact
+                in the field and contribute to the success of organizations dedicated to pushing the boundaries of
+                mechanical engineering.</h4>
+        </section>
+        <hr>
+        <section id="skills" class="thirdsection">
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>
+                        CATIA V5
+                        <div class="percentage-bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        PYTHON
+                        <div class="percentage-bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        HTML
+                        <div class="percentage-bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        CSS
+                        <div class="percentage-bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        JAVA SCRIPT
+                        <div class="percentage-bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+        <hr>
+        <section id="contact" class="fourthsection">
+            <div class="contact-section">
+                <h2>Contact Details</h2>
+                <ul class="contact-list">
+                    <li>
+                        <i class="email"></i>
+                        <img src="gm.png" alt="Email">
+                        <h4>-sajidhussain0820@gmail.com</h4>
+                    </li>
+                    <li>
+                        <i class="number"></i>
+                        <img src="wa.png" alt="Phone Number">
+                        <h4>+91-8297340868</h4>
+                    </li>
+                    <li>
+                        <i class="linkedin"></i>
+                        <img src="li.png" alt="LinkedIn">
+                        <h4>-ID: Sajid Hussain Mohammed</h4>
+                    </li>
+                    <li> <i class="insta"></i>
+                        <img src="in.png" alt="insta">
+                        <h4>-sajid_hussain_08</h4>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Mechanical Student', 'Catia Desiger', 'Python Coder', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script> src = "activepage.js" </script>
+
+</body>
+
+<footer class="footer-section">
+    <div class="footer-content">
+        <h2>Follow On</h2>
+        <ul class="contact-list1">
+            <li>
+                <i class="insta"></i>
+                <img src="in.png" alt="">
+            </li>
+            <li>
+                <i class="linkedin"></i>
+                <img src="li.png" alt="">
+            </li>
+            <li>
+                <i class="facebook"></i>
+                <img src="fb.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span class="color3">2023 Sajid Portfolio | All rights reserved.</span></p>
+    </div>
+</footer>
+
+
+</html>
